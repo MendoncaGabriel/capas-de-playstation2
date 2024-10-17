@@ -52,7 +52,7 @@
             galeria.innerHTML = ''; // Limpa a galeria antes de carregar novas imagens
             imagens.forEach(imagem => {
                 const imgElement = document.createElement('img');
-                imgElement.src = `/storage/images-compacted/${imagem}`;
+                imgElement.src = `./storage/images-compacted/${imagem}`;
                 imgElement.alt = imagem;
                 imgElement.className = 'h-[400px] w-[282px] object-cover object-right shadow-lg rounded-md cursor-pointer';
                 imgElement.addEventListener('click', () => openModal(imagem));
