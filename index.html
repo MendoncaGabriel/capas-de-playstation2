@@ -136,7 +136,7 @@
         }
 
         document.addEventListener('DOMContentLoaded', async () => {
-            const response = await fetch('/map_capas.json');
+            const response = await fetch('https://mendoncagabriel.github.io/capas-de-playstation2/map_capas.json');
             allImages = await response.json();
             renderPage(); // Renderiza a página inicial
         });
